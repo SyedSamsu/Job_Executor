@@ -1,0 +1,33 @@
+UI -> 
+
+Login/Sign Up as per user role
+For Create, edit, stop JOB as per user role
+Show all JOB which are there with staus,execution time, event, about, name for the user
+
+
+API ->
+
+Controller for Login and Register... create and update
+
+USER
+
+ID NAME PASSWORD ROLE
+
+Async Controller for JOB Details based on event ... like create, update, delete, getall, get
+
+TIME_JOB
+
+ID JOB_NAME JOB_DETAILS JOB_TIME JOB_EXEC_TIME JOB_RECURR JOB_EXEC_COUNT JOB_CURRENT_STATUS 
+
+EVENT_JOB
+
+ID JOB_NAME JOB_DETAILS JOB_EVENT JOB_EXEC_COUNT JOB_CURRENT_STATUS
+
+
+JOB ->
+
+Shell Script job
+
+file path for TIME BASE
+
+file path for EVENT BASE

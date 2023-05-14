@@ -1,0 +1,504 @@
+{
+	"info": {
+		"_postman_id": "8a128d2e-268b-4386-b69a-431f28a12268",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "GETEventByid",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/eventjobexecutor/v1/geteventjob/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"eventjobexecutor",
+								"v1",
+								"geteventjob",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALLEvents",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/eventjobexecutor/v1/getallevents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"eventjobexecutor",
+								"v1",
+								"getallevents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALLEventByid",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/eventjobexecutor/v1/getalleventjob",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"eventjobexecutor",
+								"v1",
+								"getalleventjob"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExecuteEventByName",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/eventjobexecutor/v1/runeventjobbyname/name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"eventjobexecutor",
+								"v1",
+								"runeventjobbyname",
+								"name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExecuteEventByid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/eventjobexecutor/v1/runeventjob/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"eventjobexecutor",
+								"v1",
+								"runeventjob",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateEventJob",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobName\": \"greeting Wishes\",\r\n    \"jobDetails\": \"For greeting\",\r\n    \"jobEvent\": \"birthday\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/eventjobexecutor/v1/createeventjob",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"eventjobexecutor",
+								"v1",
+								"createeventjob"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Time",
+			"item": [
+				{
+					"name": "CreateTimeJob",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobName\": \"TimeSyed\",\r\n    \"jobDetails\": \"Create file with Time\",\r\n    \"jobKey\": \"time\",\r\n    \"jobTime\": \"2023-05-13T11:23:00.000\",\r\n    \"jobRecurr\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/timejobexecutor/v1/createtimejob",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"timejobexecutor",
+								"v1",
+								"createtimejob"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETTimeByid",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/timejobexecutor/v1/gettimejob/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"timejobexecutor",
+								"v1",
+								"gettimejob",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALLTimeJobsKey",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/timejobexecutor/v1/getalltimejobskey",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"timejobexecutor",
+								"v1",
+								"getalltimejobskey"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALLTimeJobs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/timejobexecutor/v1/getalltimejob",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"timejobexecutor",
+								"v1",
+								"getalltimejob"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateTimeJob",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"jobName\": \"DateSyed\",\r\n    \"jobDetails\": \"Create file with date\",\r\n    \"jobKey\": \"date\",\r\n    \"jobTime\": \"2023-05-13T11:02:00.000\",\r\n    \"jobExecTime\": null,\r\n    \"jobRecurr\": false,\r\n    \"jobExecCount\": 0,\r\n    \"jobCurrentStatus\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/timejobexecutor/v1/updatetimejob",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"timejobexecutor",
+								"v1",
+								"updatetimejob"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RunTimeJobById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/timejobexecutor/v1/runtimejob/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"timejobexecutor",
+								"v1",
+								"runtimejob",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StopTimejobById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/timejobexecutor/v1/stoptimejob/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"timejobexecutor",
+								"v1",
+								"stoptimejob",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"admin\",\r\n    \"password\": \"admin\",\r\n    \"role\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/jobexecutor/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"jobexecutor",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user1\",\r\n    \"password\": \"user2\",\r\n    \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/jobexecutor/v1/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"jobexecutor",
+								"v1",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
